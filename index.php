@@ -3,7 +3,7 @@
 //include ("lib/premium_safe.php");
 spl_autoload_register(function ($class_name) 
     {
-        include 'lib/' . $class_name . '.php';
+        include $class_name . '.php';
     }
 );
 
