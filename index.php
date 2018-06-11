@@ -1,14 +1,12 @@
 <?php
 
-//include ("lib/premium_safe.php");
 spl_autoload_register(function ($class_name) 
     {
         include $class_name . '.php';
     }
 );
 
-$safe1 = new Safe("password123");
-echo $safe1;
+$safe1 = new Safe("password123"); echo $safe1;
 
 echo $safe1->getHint();
 
